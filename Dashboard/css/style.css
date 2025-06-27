@@ -263,6 +263,10 @@ cursor: pointer;
 border-radius: 10px;
 display: flex;
 justify-content: space-around;
+    gap: 4px;
+}
+.btn-primary:hover {
+background: var(--sidebar-bg);
 }
 .slider {
 position: relative;
@@ -361,9 +365,12 @@ color: var(--primary);
 }
 tbody tr:nth-child(odd) {
 background-color: #f9f9f9;
+
 }
 tbody tr:nth-child(even) {
 background-color: #fff;
+border-left: solid #17c0ae 3px;
+
 }
 tbody tr:hover {
 background-color: #e3f3f1;
