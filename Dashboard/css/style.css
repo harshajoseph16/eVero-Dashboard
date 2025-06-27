@@ -347,6 +347,7 @@ align-items: center;
 }
 .high-priority h5 {
 color: #000;
+font-weight: normal;
 }
 table {
 width: 100%;
