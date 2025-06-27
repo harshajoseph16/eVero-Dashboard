@@ -460,8 +460,7 @@ display: none;
 font-size: 14px;
 }
 .page {
-display: flex
-;
+display: flex;
 align-items: center;
 justify-content: space-around;
 }
@@ -494,9 +493,7 @@ display: none;
 
 
 
-.language-dropdown select {
-    padding: 10px 0px;
-}
+
 }
 
 /**********/
