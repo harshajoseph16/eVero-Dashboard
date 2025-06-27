@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard </title>
     <link rel="stylesheet" href="css/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <div class="sidebar" id="sidebar">
-        <button class="menu-toggle" onclick="toggleMenu()"> <img src="images/mdi_close.svg"></button>
+        <button class="menu-toggle" onclick="toggleMenu()"> <img
+                src="images/mdi_close.svg"></button>
         <div class="logo"> <img src="images/logo.png" alt="Logo" loading="lazy">
-</div>
+        </div>
         <div class="menu">
             <div class="menu-topper">
                 <a href="#"><img src="images/menu.svg"> </a>
@@ -23,12 +24,19 @@
                 <a href="#"><img src="images/settings.svg"> </a>
             </div>
             <ul>
-                <li><a href="#" class="active"><img class="icon"  src="images/Vector.svg">  Dashboard</a></li>
-                  <li>  <a href="#"> <img class="icon" src="images/Users.svg"> Customers</a></li>
-                 <li>   <a href="#"><img class="icon" src="images/Notification.svg">  Notification</a></li>
-                 <li>    <a href="#"> <img class="icon"  src="images/Notificationpool.svg"> Notification Pool</a></li>
-                  <li>   <a href="#"><img class="icon" src="images/Contact.svg"> Contact</a></li>
-                  <li>   <a href="#"> <img class="icon" src="images/report.svg"> Reports</a></li>
+                <li><a href="#" class="active"><img class="icon"
+                            src="images/Vector.svg"> Dashboard</a></li>
+                <li> <a href="#"> <img class="icon" src="images/Users.svg">
+                        Customers</a></li>
+                <li> <a href="#"><img class="icon"
+                            src="images/Notification.svg"> Notification</a></li>
+                <li> <a href="#"> <img class="icon"
+                            src="images/Notificationpool.svg"> Notification
+                        Pool</a></li>
+                <li> <a href="#"><img class="icon" src="images/Contact.svg">
+                        Contact</a></li>
+                <li> <a href="#"> <img class="icon" src="images/report.svg">
+                        Reports</a></li>
             </ul>
             <div class="menu-btm">
                 <p>@ 2025 All Right Reserved</p>
@@ -36,7 +44,8 @@
         </div>
     </div>
     <div class="main" id="main">
-        <header class="topbar">
+        <header >
+            <div class="topbar">
             <button class="toggle-btn" onclick="toggleMenu()">☰</button>
             <div class="search">
                 <input type="search" placeholder="Search here..." />
@@ -46,13 +55,21 @@
                 <div class="profile-img">
                     <img src="images/profile.png " alt="Profile">
                 </div>
-                <div class="profile-round">
-                    <h5>EN</h5>
+                <div class="language-dropdown">
+                    <select>
+                        <option value="en" selected>EN</option>
+                        <option value="fr">FR</option>
+                        <option value="es">ES</option>
+                    </select>
                 </div>
                 <div class="profile-round">
                     <img src="images/logout.svg " alt="logout">
                 </div>
-            </div>
+            </div> </div>
+            <div class="mobile-search">
+  <input type="search" placeholder="Search here..." />
+  
+</div>
         </header>
         <section class="content">
             <div class="banner">
@@ -67,7 +84,8 @@
             </div>
             <div class="table">
                 <div class="high-priority">
-                   <img src="images/info.svg"> <h5> High priority information</h5>
+                    <img src="images/info.svg">
+                    <h5> High priority information</h5>
                 </div>
                 <div class="table-container">
                     <table>
@@ -87,8 +105,13 @@
                                 <td>25/07/2016 </td>
                                 <td>14.43</td>
                                 <td>
-                                  <button class="action-btn"><img src="images/mage_edit.svg" alt="Edit" /></button>
-                                  <button class="action-btn"><img src="images/delete.svg" alt="Delete" /></button> </td>
+                                    <button class="action-btn"><img
+                                            src="images/mage_edit.svg"
+                                            alt="Edit" /></button>
+                                    <button class="action-btn"><img
+                                            src="images/delete.svg"
+                                            alt="Delete" /></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>#315</td>
@@ -96,8 +119,13 @@
                                 <td>25/07/2016 </td>
                                 <td>14.43</td>
                                 <td>
-                                  <button class="action-btn"><img src="images/mage_edit.svg" alt="Edit" /></button>
-                                  <button class="action-btn"><img src="images/delete.svg" alt="Delete" /></button> </td>
+                                    <button class="action-btn"><img
+                                            src="images/mage_edit.svg"
+                                            alt="Edit" /></button>
+                                    <button class="action-btn"><img
+                                            src="images/delete.svg"
+                                            alt="Delete" /></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>#315</td>
@@ -105,17 +133,27 @@
                                 <td>25/07/2016 </td>
                                 <td>14.43</td>
                                 <td>
-                                  <button class="action-btn"><img src="images/mage_edit.svg" alt="Edit" /></button>
-                                  <button class="action-btn"><img src="images/delete.svg" alt="Delete" /></button> </td>
+                                    <button class="action-btn"><img
+                                            src="images/mage_edit.svg"
+                                            alt="Edit" /></button>
+                                    <button class="action-btn"><img
+                                            src="images/delete.svg"
+                                            alt="Delete" /></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>#315</td>
                                 <td>Fatura</td>
                                 <td>25/07/2016 </td>
                                 <td>14.43</td>
-                               <td>
-                                  <button class="action-btn"><img src="images/mage_edit.svg" alt="Edit" /></button>
-                                  <button class="action-btn"><img src="images/delete.svg" alt="Delete" /></button> </td>
+                                <td>
+                                    <button class="action-btn"><img
+                                            src="images/mage_edit.svg"
+                                            alt="Edit" /></button>
+                                    <button class="action-btn"><img
+                                            src="images/delete.svg"
+                                            alt="Delete" /></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>#315</td>
@@ -123,8 +161,13 @@
                                 <td>25/07/2016 </td>
                                 <td>14.43</td>
                                 <td>
-                                  <button class="action-btn"><img src="images/mage_edit.svg" alt="Edit" /></button>
-                                  <button class="action-btn"><img src="images/delete.svg" alt="Delete" /></button> </td>
+                                    <button class="action-btn"><img
+                                            src="images/mage_edit.svg"
+                                            alt="Edit" /></button>
+                                    <button class="action-btn"><img
+                                            src="images/delete.svg"
+                                            alt="Delete" /></button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -134,10 +177,8 @@
                     <div class="page">
                         <img src="images/prvs.svg ">
                         <div class=" number active">1</div>
-
-                         <div class=" number ">2</div>
-                          <div class=" number ">3</div>
-                       
+                        <div class=" number ">2</div>
+                        <div class=" number ">3</div>
                         <img src="images/next.svg ">
                     </div>
                 </div>

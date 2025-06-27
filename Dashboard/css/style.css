@@ -2,16 +2,12 @@
 --primary: #17c0ae;
 --sidebar-bg: linear-gradient(180deg, #2CB4AF, #2DC685);
 --btn-bg: linear-gradient(90deg, #2CB4AF, #2DC685);
-  --font-main: 'Poppins', sans-serif;
+--font-main: 'Poppins', sans-serif;
 --light: #f8f9fa;
 --gray: #ccc;
 --bgwhite : #fff;
 --thin : #F7F7F7;
 }
-
-
-
-
 * {
 margin: 0;
 padding: 0;
@@ -155,8 +151,7 @@ font-size: 14px;
 border: 1px solid #ccc;
 border-radius: 30px;
 outline: none;
-  font-family: var(--font-main) !important;
-
+font-family: var(--font-main) !important;
 }
 .search-icon {
 position: absolute;
@@ -191,6 +186,20 @@ height: 20px;
 display: flex;
 border-radius: 30px;
 background: var(--thin);
+}
+.language-dropdown select {
+padding: 12px 3px;
+border: 1px solid #ccc;
+border-radius: 20px;
+background: var(--thin);
+font-family: 'Poppins', sans-serif;
+cursor: pointer;
+border: none;
+color: var(--primary);
+font-size: 12px;
+}
+:focus-visible {
+outline: none;
 }
 .profile-icon {
 display: flex;
@@ -265,7 +274,7 @@ cursor: pointer;
 border-radius: 10px;
 display: flex;
 justify-content: space-around;
-    gap: 4px;
+gap: 4px;
 }
 .btn-primary:hover {
 background: var(--sidebar-bg);
@@ -367,12 +376,10 @@ color: var(--primary);
 }
 tbody tr:nth-child(odd) {
 background-color: #f9f9f9;
-
 }
 tbody tr:nth-child(even) {
 background-color: #fff;
 border-left: solid #17c0ae 3px;
-
 }
 tbody tr:hover {
 background-color: #e3f3f1;
@@ -398,9 +405,28 @@ transition: transform 0.2s;
 .action-btn:hover img {
 transform: scale(1.1);
 }
-
+.mobile-search input[type="search"] {
+width: 100%;
+padding: 10px 35px 10px 20px;
+font-size: 14px;
+border: 1px solid #ccc;
+border-radius: 30px;
+font-family: 'Poppins', sans-serif;
+outline: none;
+}
+.mobile-search .search-icon {
+position: absolute;
+right: 30px;
+top: 50%;
+transform: translateY(-50%);
+width: 20px;
+height: 20px;
+pointer-events: none;
+}
+.mobile-search {
+display: none;
+}
 /************/
-
 @media screen and (max-width: 768px) {
 .sidebar {
 left: -240px;
@@ -424,10 +450,18 @@ display: none;
 .table {
 font-size: 14px;
 }
+.page {
+display: flex
+;
+align-items: center;
+justify-content: space-around;
+}
 .pagination {
 display: block;
 text-align: center;
 margin-top: 20px;
+flex-direction: column;
+gap: 10px;
 }
 .pagination span {
 padding: 4px 12px;
@@ -440,5 +474,12 @@ gap: 10px;
 padding: 5px 10px;
 font-size: 11px;
 align-items: center;
+}
+.mobile-search {
+display: block;
+margin: 0 0 20px;
+}
+.search {
+display: none;
 }
 }
