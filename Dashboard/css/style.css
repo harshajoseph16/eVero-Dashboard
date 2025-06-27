@@ -7,6 +7,10 @@
 --bgwhite : #fff;
 --thin : #F7F7F7;
 }
+
+
+
+
 * {
 margin: 0;
 padding: 0;
@@ -19,8 +23,7 @@ display: flex;
 overflow-x: hidden;
 }
 p {
- font-family: 'Poppins', sans-serif t;
- 
+font-family: 'Poppins', sans-serif ;
 }
 .logo {
 background-color: var(--bgwhite);
@@ -88,15 +91,14 @@ background-color: white;
 border-radius: 30px 0 0 30px;
 color: #000;
 }
-
 .menu-btm{
-      display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-        bottom: 60px;
-    font-size: 12px;
-    padding: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+position: absolute;
+bottom: 0px;
+font-size: 12px;
+padding: 10px 20px;
 }
 .icon {
 width: 20px;
@@ -127,7 +129,6 @@ width: 100%;
 .main.full {
 margin-left: 0;
 }
-/* Topbar */
 .topbar {
 display: flex;
 justify-content: space-between;
@@ -299,30 +300,28 @@ padding: 10px 0;
 align-items: center;
 }
 .page {
-      display: flex;
-    align-items: center;
-    justify-content: flex-end;
+display: flex;
+align-items: center;
+justify-content: flex-end;
 }
-.pagination span {
-     padding: 3px 10px;
-    border: 1px solid #ccc;
-    margin: 0 6px;
-    border-radius: 49px;
-    cursor: pointer;
-    font-size: 13px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.number {
+padding: 3px 10px;
+border: 1px solid #ccc;
+margin: 0 6px;
+border-radius: 49px;
+cursor: pointer;
+font-size: 13px;
+align-items: center;
+justify-content: center;
+display: flex;
 }
-
 .pagination .active {
 background-color: var(--primary);
 color: #fff;
 border-color: var(--primary);
 }
-
 .pagination h5 {
-  font-weight: normal;
+font-weight: normal;
 }
 .table-container {
 max-width: 100%;
@@ -332,18 +331,22 @@ border: 1px solid #ccc;
 border-radius:0 0 6px 6px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-
+.high-priority {
+display: flex;
+width: 100%;
+background: #E4E2E2;
+padding: 10px;
+border-radius: 10px 10px 0 0 ;
+gap: 10px;
+align-items: center;
+}
 .high-priority h5 {
-    background: #E4E2E2;
-    color: #000;
-    padding: 0.7rem;
-    border-radius: 10px 10px 0 0 ;
+color: #000;
 }
 table {
 width: 100%;
 border-collapse: collapse;
 min-width: 600px;
-/* makes it scrollable on small screens */
 }
 th,
 td {
@@ -353,22 +356,18 @@ text-align: left;
 font-size: 12px;
 }
 thead {
-  background-color: #f1f1f1;
-  color: var(--primary);
+background-color: #f1f1f1;
+color: var(--primary);
 }
 tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
+background-color: #f9f9f9;
 }
-
 tbody tr:nth-child(even) {
-  background-color: #fff;
+background-color: #fff;
 }
-
 tbody tr:hover {
-  background-color: #e3f3f1;
+background-color: #e3f3f1;
 }
-
-
 .table-container::-webkit-scrollbar {
 height: 6px;
 }
@@ -376,31 +375,23 @@ height: 6px;
 background: #ccc;
 border-radius: 4px;
 }
-
-
 .action-btn {
-  background: transparent;
-  border: none;
-  padding: 4px;
-  cursor: pointer;
+background: transparent;
+border: none;
+padding: 4px;
+cursor: pointer;
 }
-
 .action-btn img {
-  width: 18px;
-  height: 18px;
-  transition: transform 0.2s;
+width: 18px;
+height: 18px;
+transition: transform 0.2s;
 }
-
 .action-btn:hover img {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 
+/************/
 
-@media (max-width: 600px) {
-table {
-font-size: 14px;
-}
-}
 @media screen and (max-width: 768px) {
 .sidebar {
 left: -240px;
@@ -421,26 +412,24 @@ display: block;
 .search {
 display: none;
 }
-
+.table {
+font-size: 14px;
+}
 .pagination {
-    display: block;
-            text-align: center;
-                    margin-top: 20px;
-
+display: block;
+text-align: center;
+margin-top: 20px;
 }
-
 .pagination span {
-    padding: 4px 12px;
+padding: 4px 12px;
 }
-
 .content {
-    padding: 20px;
+padding: 20px;
 }
-
 .btn-primary {
-          gap: 10px;
-    padding: 5px 10px;
-    font-size: 11px;
-    align-items: center;
+gap: 10px;
+padding: 5px 10px;
+font-size: 11px;
+align-items: center;
 }
 }
