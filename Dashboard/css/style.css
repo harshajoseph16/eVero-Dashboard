@@ -2,6 +2,7 @@
 --primary: #17c0ae;
 --sidebar-bg: linear-gradient(180deg, #2CB4AF, #2DC685);
 --btn-bg: linear-gradient(90deg, #2CB4AF, #2DC685);
+  --font-main: 'Poppins', sans-serif;
 --light: #f8f9fa;
 --gray: #ccc;
 --bgwhite : #fff;
@@ -17,13 +18,13 @@ padding: 0;
 box-sizing: border-box;
 }
 body {
-font-family: 'Poppins', sans-serif !important;
+font-family: var(--font-main);
 background-color: var(--bgwhite);
 display: flex;
 overflow-x: hidden;
 }
 p {
-font-family: 'Poppins', sans-serif ;
+font-family: var(--font-main);
 }
 .logo {
 background-color: var(--bgwhite);
@@ -154,7 +155,8 @@ font-size: 14px;
 border: 1px solid #ccc;
 border-radius: 30px;
 outline: none;
-font-family: 'Poppins', sans-serif !important;
+  font-family: var(--font-main) !important;
+
 }
 .search-icon {
 position: absolute;
@@ -333,7 +335,6 @@ overflow-x: auto;
 background: white;
 border: 1px solid #ccc;
 border-radius:0 0 6px 6px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 .high-priority {
 display: flex;
